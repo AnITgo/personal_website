@@ -8,7 +8,7 @@ var Promise = require('bluebird')
 function filterChapters(html) {
   var $ = cheerio.load(html)
   var chapters = $('.course-chapters')
-  var title = $('.hd clearfix')
+  var title = $('.hd clearfix h2').text()
 /*
   title : '',
   number : '', 
